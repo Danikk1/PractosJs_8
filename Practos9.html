@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильмы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Управление фильмами</h1>
+        <form id="film-form">
+            <input type="text" id="title" placeholder="Название" required>
+            <input type="text" id="director" placeholder="Режиссер" required>
+            <input type="number" id="year" placeholder="Год выпуска" required>
+            <select id="genre" required>
+                <option value="">Выберите жанр</option>
+                <option value="Драма">Драма</option>
+                <option value="Комедия">Комедия</option>
+                <option value="Боевик">Боевик</option>
+                <option value="Фантастика">Фантастика</option>
+            </select>
+            <button type="submit">Добавить фильм</button>
+        </form>
+        <table id="film-table">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Режиссер</th>
+                    <th>Год выпуска</th>
+                    <th>Жанр</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody id="film-list">
+            </tbody>
+        </table>
+        <div class="btn-group">
+            <button id="clear-btn">Очистить список</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
